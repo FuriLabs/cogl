@@ -405,7 +405,7 @@ _cogl_driver_update_features (CoglContext *context,
                       COGL_FEATURE_ID_MAP_BUFFER_FOR_WRITE, TRUE);
     }
 
-  if (context->glMapBufferRange)
+  if (context->glMapBufferRange && (g_getenv ("COGL_DISABLE_MAPBUFFERRANGE") == NULL))
     {
       /* MapBufferRange in ES3+ does support mapping for read */
       flags |= (COGL_FEATURE_MAP_BUFFER_FOR_WRITE |
