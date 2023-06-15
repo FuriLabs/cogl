@@ -1,3 +1,14 @@
+cogl (1.22.8-4) UNRELEASED; urgency=medium
+
+  [ Simon McVittie ]
+  * d/control.in: Drop alternative B-D on libgdk-pixbuf2.0-dev.
+    libgdk-pixbuf-2.0-dev has been available since bullseye.
+
+  [ "won't fix" ]
+  * Don't install unnecessary example file crate.jpg
+
+ -- Simon McVittie <smcv@debian.org>  Thu, 15 Jun 2023 09:48:57 +0100
+
 cogl (1.22.8-3) unstable; urgency=medium
 
   * Team upload
