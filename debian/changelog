@@ -1,4 +1,4 @@
-cogl (1.22.8-4) UNRELEASED; urgency=medium
+cogl (1.22.8-4) unstable; urgency=medium
 
   [ Simon McVittie ]
   * d/control.in: Drop alternative B-D on libgdk-pixbuf2.0-dev.
@@ -7,7 +7,11 @@ cogl (1.22.8-4) UNRELEASED; urgency=medium
   [ "won't fix" ]
   * Don't install unnecessary example file crate.jpg
 
- -- Simon McVittie <smcv@debian.org>  Thu, 15 Jun 2023 09:48:57 +0100
+  [ Jeremy Bícha ]
+  * Update lintian override info format
+  * Update standards version to 4.6.2, no changes needed
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Thu, 15 Jun 2023 12:15:16 -0400
 
 cogl (1.22.8-3) unstable; urgency=medium
 
