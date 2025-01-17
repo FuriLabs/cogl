@@ -2,7 +2,11 @@ Source: cogl
 Section: libs
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Iain Lane <laney@debian.org>, Jeremy Bícha <jbicha@ubuntu.com>, Laurent Bigonville <bigon@debian.org>, Michael Biebl <biebl@debian.org>, Sjoerd Simons <sjoerd@debian.org>,
+Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>,
+           Iain Lane <laney@debian.org>,
+           Jeremy Bícha <jbicha@ubuntu.com>,
+           Laurent Bigonville <bigon@debian.org>,
+           Sjoerd Simons <sjoerd@debian.org>,
            Rico Tzschichholz <ricotz@ubuntu.com>
 Build-Depends: debhelper-compat (= 13),
                dh-sequence-gir,
@@ -43,8 +47,7 @@ Depends: libgl1 [!armel !armhf],
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: libcogl-common
-Suggests: libgl1,
-          libgles2
+Suggests: libgl1, libgles2
 Breaks: libclutter-1.0-0 (<< 1.17)
 Multi-Arch: same
 Description: Object oriented GL/GLES Abstraction/Utility Layer
@@ -56,8 +59,7 @@ Description: Object oriented GL/GLES Abstraction/Utility Layer
 Package: libcogl-common
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Object oriented GL/GLES Abstraction/Utility Layer (common files)
  Cogl is a small open source library for using 3D graphics hardware to draw
  pretty pictures. The API departs from the flat state machine style of
@@ -91,7 +93,7 @@ Depends: gir1.2-cogl-1.0 (= ${binary:Version}),
          ${shlibs:Depends}
 Breaks: libcogl-path-dev (<< 1.22.4-4~)
 Replaces: libcogl-path-dev (<< 1.22.4-4~)
-Recommends: pkg-config
+Recommends: pkgconf
 Suggests: libcogl-doc
 Description: Object oriented GL/GLES Abstraction/Utility Layer (development files)
  Cogl is a small open source library for using 3D graphics hardware to draw
@@ -119,9 +121,7 @@ Description: Object oriented GL/GLES Abstraction/Utility Layer (documentation)
 Package: gir1.2-cogl-1.0
 Section: introspection
 Architecture: any
-Depends: ${gir:Depends},
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
 Provides: gir1.2-cogl-2.0 (= ${binary:Version})
 Multi-Arch: same
 Description: GObject introspection data for the Cogl 1.0 library
@@ -133,8 +133,7 @@ Description: GObject introspection data for the Cogl 1.0 library
 
 Package: libcogl-path20
 Architecture: any
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: libcogl-common
 Multi-Arch: same
 Description: Object oriented GL/GLES Abstraction/Utility Layer
@@ -147,10 +146,8 @@ Package: libcogl-path-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libcogl-dev (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
-Recommends: pkg-config
+Depends: libcogl-dev (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Recommends: pkgconf
 Suggests: libcogl-doc
 Description: Object oriented GL/GLES Abstraction/Utility Layer (development files)
  Cogl is a small open source library for using 3D graphics hardware to draw
@@ -164,8 +161,7 @@ Description: Object oriented GL/GLES Abstraction/Utility Layer (development file
 
 Package: libcogl-pango20
 Architecture: any
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: libcogl-common
 Multi-Arch: same
 Description: Object oriented GL/GLES Abstraction/Utility Layer
@@ -193,7 +189,7 @@ Depends: gir1.2-coglpango-1.0 (= ${binary:Version}),
          libxfixes-dev,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: pkg-config
+Recommends: pkgconf
 Suggests: libcogl-doc
 Description: Object oriented GL/GLES Abstraction/Utility Layer (development files)
  Cogl is a small open source library for using 3D graphics hardware to draw
@@ -206,9 +202,7 @@ Description: Object oriented GL/GLES Abstraction/Utility Layer (development file
 Package: gir1.2-coglpango-1.0
 Section: introspection
 Architecture: any
-Depends: ${gir:Depends},
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
 Provides: gir1.2-coglpango-2.0 (= ${binary:Version})
 Multi-Arch: same
 Description: GObject introspection data for the CoglPango 1.0 library
