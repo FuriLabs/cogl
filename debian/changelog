@@ -1,3 +1,11 @@
+cogl (1.22.8-5) unstable; urgency=medium
+
+  * Bump Standards Version to 4.7.0
+  * Run wrap-and-sort
+  * Stop using debian/control.in and gnome-pkg-tools
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Fri, 17 Jan 2025 10:05:17 -0500
+
 cogl (1.22.8-4) unstable; urgency=medium
 
   [ Simon McVittie ]
